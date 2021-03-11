@@ -165,7 +165,7 @@ We can plot the locations of the two establishments using a scatter plot, and co
 Note that the latitude is plotted on the x-axis and the longitude on the y-axis.
 
 ```{r}
-ggplot(dn_lq, mapping = aes(x = longitude, y = latitude, color = establishment)) +
+ggplot(dn_lq, mapping = aes(x = longitude, y = latitude, color =   establishment)) +
     geom_point()
 ```
 
