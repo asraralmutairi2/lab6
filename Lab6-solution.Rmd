@@ -5,7 +5,7 @@ author: Asrar Almutairi
 output: pdf_document
 ---
 G: DS6
-Student ID: 2201000537 
+Student ID: 2201000537
 
 
 ```{r include = FALSE}
@@ -15,8 +15,8 @@ knitr::opts_chunk$set(eval = TRUE)
 Load the needed packages. Note: dsbox is not yet on CRAN. For now, you need to install it before you load the library. Uncomment, by deleting # from, the two lines of code below.
 
 ```{r message = FALSE}
-#install.packages("devtools")
-#devtools::install_github("rstudio-education/dsbox")
+install.packages("devtools")
+devtools::install_github("rstudio-education/dsbox")
 ```
 
 Load the libraries here.
@@ -34,25 +34,26 @@ states <- read_csv("data/states.csv")
 
 # Exercises
 
-1.  What are the dimensions of the Denny's dataset?
-    (Hint: Use inline R code and functions like `nrow` and `ncol` to compose your answer.) What does each row in the dataset represent?
-    What are the variables?
+1.  What are the dimensions of the Denny's dataset?  1,643 rows and 6 columns
+    (Hint: Use inline R code and functions like `nrow` and `ncol` to compose your answer.)
+What does each row in the dataset represent? 
+What are the variables? address , city , state , zip , longitude , latitude
     
 ```{r}
 dim(dennys)
-#head(dennys)
+head(dennys)
 ```
 \textcolor{red}{The `dennys` dataset has 1,643 rows and 6 columns. Each row represents location information about a denny's restaurant.}
 
 
-2.  What are the dimensions of the La Quinta's dataset? 
-    What does each row in the dataset represent?
-    What are the variables?
+2.  What are the dimensions of the La Quinta's dataset? 909 rows and 6 columns.
+    What does each row in the dataset represent? Each row represents location information about laquinta's hotel.
+    What are the variables?  address , city , state , zip , longitude , latitude.
     
     
 ```{r}
 dim(laquinta)
-#head(laquinta)
+head(laquinta)
 ```
 \textcolor{red}{This dataset has 909 rows and 6 columns. Each row represents location information about laquinta's hotel.}
 
