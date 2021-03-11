@@ -62,7 +62,7 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 
 3.  Add a country variable to the Denny's and Laquinta's datasets and set all observations equal to `"United States"`. Remember, you can use the `mutate` function for adding a variable. Make sure to save the result of this as `dn` and lq, respectively, so that the stored data frame contains the new variable going forward.
 
-For Denny's
+For Denny's 
 
 ```{r}
 dn <- dennys %>%
